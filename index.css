@@ -714,14 +714,19 @@ p {
   height: 40%;
   background-color: rgba(85, 85, 85, 0.8);
 }
-.ruler .scaled_ruler section {
+
+.ruler .scaled_ruler::after {
+  content: "";
   width: 5px;
   height: 42.5px;
   background-color: rgba(0, 176, 125, 0.75);
   border-radius: 5px 5px 0px 0px;
   position: absolute;
   top: 7px;
+  left:calc(100% - 2px);
 }
+
+
 .Table {
   width: calc(100% - 60px);
   margin: auto;

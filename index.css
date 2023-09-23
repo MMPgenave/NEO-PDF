@@ -216,6 +216,10 @@ p {
   position: relative;
   /* border: #e76e6e solid ; */
 }
+/* avoid printing an empty page at the end of the html */
+.lastPage {
+  page-break-after:auto;
+}
 
 /* footer style */
 .footer-green {
@@ -699,7 +703,7 @@ p {
   margin-right: calc(9% - 5px);
 }
 .ruler .scaled_ruler {
-  /* border: #000 solid; */
+  /* border: #000 solid 0.5px; */
   width: calc(100% - 30px);
   margin: auto;
   margin-top: 2.5rem;
